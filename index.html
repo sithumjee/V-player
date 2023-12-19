@@ -3,35 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V-player</title>
+    <title>v-Player</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <nav>
-      <div class="navleft">
-        <div class="logo">
-          <img src="images/logo.png" />
-        </div>
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">SocialBook</a></li>
-        </ul>
+    <nav class="flex-div">
+      <div class="nav-left">
+        <div><img src="images/menu.png" alt="" /></div>
+        <div><h1>V-Player</h1></div>
       </div>
-
-      <div class="navright">
-        <div class="search">
-          <input type="text" placeholder="Search" />
-          <img src="images/search.png" alt="search" class="search" />
-        </div>
-
-        <div class="profile online" onclick="settingsMenuToggle()">
-          <img src="images/profile.png" />
-        </div>
+      <div class="nav-middle"></div>
+      <div class="nav-right">
+        <img src="images/upload.png" alt="" />
+        <img src="images/more.png" alt="" />
+        <img src="images/notification.png" alt="" />
+        <img src="images/profile.png" class="profile-photo" />
       </div>
     </nav>
+
     <script src="app.js"></script>
   </body>
 </html>

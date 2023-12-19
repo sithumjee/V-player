@@ -10,10 +10,21 @@
   <body>
     <nav class="flex-div">
       <div class="nav-left">
-        <div><img src="images/menu.png" alt="" /></div>
+        <div><img src="images/menu.png" class="menuIcon" /></div>
         <div><h1>V-Player</h1></div>
       </div>
-      <div class="nav-middle"></div>
+
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <img src="images/search.png" alt="" />
+        </div>
+
+        <div>
+          <img src="images/voice-search.png" class="mic-icon" />
+        </div>
+      </div>
+
       <div class="nav-right">
         <img src="images/upload.png" alt="" />
         <img src="images/more.png" alt="" />
@@ -21,6 +32,63 @@
         <img src="images/profile.png" class="profile-photo" />
       </div>
     </nav>
+
+    <!-- side bar -->
+
+    <div class="side-bar">
+      <div class="side-bar-item">
+        <a href="#"
+          ><img src="images/home.png" />
+          <p>Home</p></a
+        >
+        <a href="#"
+          ><img src="images/explore.png" />
+          <p>Explore</p></a
+        >
+        <a href="#"
+          ><img src="images/subscriprion.png" />
+          <p>Subscriptions</p></a
+        >
+        <a href="#"
+          ><img src="images/library.png" />
+          <p>Library</p></a
+        >
+        <a href="#"
+          ><img src="images/history.png" />
+          <p>History</p></a
+        >
+        <a href="#"
+          ><img src="images/playlist.png" />
+          <p>Playlist</p></a
+        >
+        <a href="#"
+          ><img src="images/messages.png" />
+          <p>Messages</p></a
+        >
+        <a href="#"
+          ><img src="images/show-more.png" />
+          <p>Show-More</p></a
+        >
+      </div>
+
+      <hr />
+
+      <div class="subcribe-list">
+        <h3>SUBSCRIBED</h3>
+        <a href="#"
+          ><img src="images/member-1.png" />
+          <p>Koshal Hasintha</p>
+        </a>
+        <a href="#"
+          ><img src="images/member-2.png" />
+          <p>Hansi Jayarathna</p>
+        </a>
+        <a href="#"
+          ><img src="images/member-3.png" />
+          <p>Nimanthi Kumari</p>
+        </a>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>

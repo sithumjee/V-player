@@ -35,22 +35,25 @@ nav h1 {
 }
 
 .profile-photo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin-right: 20px;
 }
 
-.flex-div {
+.flex-div,
+.nav-right,
+.nav-left {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 2%;
+  padding: 12px 2%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   position: sticky;
@@ -58,14 +61,109 @@ nav {
   z-index: 999;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+.mic-icon {
+  width: 16px;
+  margin-right: 20px;
 }
 
-.nav-right {
+.search-box {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+
+.search-box input {
+  width: 400px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-box input::placeholder {
+  color: #5a5a5a;
+}
+
+.search-box img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+/*-------------------left side bar--------------------*/
+
+.side-bar {
+  background: white;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80px;
+  z-index: 444;
+}
+
+.small-sidebar {
+  width: 5%;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+
+.small-sidebar p {
+  display: none;
+}
+
+.small-sidebar h3 {
+  display: none;
+}
+
+.side-bar-item a img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.side-bar-item a {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  margin-bottom: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.side-bar-item a:first-child {
+  color: #ff0000;
+}
+
+.side-bar hr {
+  width: 85%;
+  margin: 20px 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.subcribe-list h3 {
+  font-size: 13px;
+  font-weight: 750;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+.subcribe-list a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subcribe-list a img {
+  width: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
